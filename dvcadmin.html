@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>PROMARIDRIAN UNIVERSITY</title>
+      <link rel="stylesheet" href="css/project.css" type="text/css">
+      <link rel="shortcut icon" href="images/logo.PNG">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+      <div class="contain">
+            <div class="header">
+                  <div class="logo"></div>
+                  <div class="name">
+                        <h1>PROMARIDRIAN UNIVERSITY</h1>
+                        <p><b><i>Education; The Foundation of Good Fortune</i></b></p>
+                  </div>
+
+            </div>
+            <ul id="nav">
+                  <li><a href="index.html">The University <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown">
+                              <li><a href="vision.html">Vision</a></li>
+                              <li><a href="Mission.html">Mission</a></li>
+                              <li><a href="Core.html">Core Values</a></li>
+                              <li><a href="History.html">History</a></li>
+                              <li><a href="Goals.html">Goals & Objectives</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="index.html">Management <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                              <li><a href="vc.html">Vice Chancellor</a></li>
+                              <li><a href="dvcadmin.html">DVC Admin</a></li>
+                              <li><a href="dvcacademics.html">DVC Academics</a></li>
+                              <li><a href="registrar.html">Registrar</a></li>
+                              <li><a href="bursar.html">Bursar</a></li>
+                              <li><a href="libarian.html">Libarian</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="index.html">Council <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                              <li><a href="Chancellor.html">Chancellor</a></li>
+                              <li><a href="prochancellor.html">Pro-Chancellor</a></li>
+
+                        </ul>
+                  </li>
+                  <li><a href="index.html">Admission <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                              <li><a href="undergraduate.html">Undergraduate</a></li>
+                              <li><a href="postgraduate.html">Postgraduate</a></li>
+                              <li><a href="predegree.html">Predegree/Basic Studies</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="faculties.html">Faculties</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="contact.html">Contact-Us</a></li>
+            </ul>
+
+      </div>
+
+      <div class="vccontain">
+            <h4>DVC Administration</h4>
+
+            <div><img src="images/dvcadmin.jpg">
+                 <p><strong>Professor Nyaudoh U. Ndaeyo</strong><br /><br />
+Nyaudoh Ukpabio Ndaeyo was born on March 25, 1961.  He attended the Cross River State School of Agriculture, Obubra for his Ordinary National Diploma, OND, in Agriculture which he passed at distinction level in 1986.  He also attended the erstwhile University of Cross River State now University of Uyo in 1987 to study Agronomy in the Faculty of Agriculture and graduated with first class honours division in 1991.  Nyaudoh<br /><br /> 
+Ndaeyo also earned a Master of Science (M.Sc.) degree in Agronomy in 1994 and a Doctorate (Ph.D) degree in Farming Systems in 2000 both from the University of Ibadan, Nigeria.<br /><br />
+
+The new Deputy Vice-Chancellor, Administration was first employed on November 06, 1992 as Graduate Assistant with the Promaridrian University, 18 years later, he grew through the ranks and became a Professor of Farming Systems in the Department of Crop Science, Faculty of Agriculture on October 01, 2010.<br /><br />
+
+
+Prof. Nyaudoh Ndaeyo is a seasoned teacher and researcher.  He has taught over thirty courses at both the undergraduate and graduate levels and has also supervised over 68 undergraduate projects and 54 graduate theses including doctoral degree students.<br /><br />
+
+During his career in the University, Prof. Nyaudoh Ndaeyo has served as a lecturer, researcher, examinations officer, co-ordinator of several academic activities and programmes in the Department of Crop Science, as well as chairman of several committees in the department.<br /><br />
+
+He had served as adviser to students of the Faculty of Agriculture.  Nyaudoh Ndaeyo was appointed Head of Department, 2006 - 2009 and also appointed Dean of the Faculty of Agriculture in 2016 and in 2018 was appointed Chairman, Committee of Deans.  He has served either as Chairman or member of Faculty and University Committees.  In his services which spans beyond the Promaridrian University, Prof. Ndaeyo is a renowned resource person and consultant to both government and private sectors.  He is a facilitator and external examiner to other Universities.<br>
+
+He is a member of several professional bodies including Crop Science Society of Nigeria, CSSN; Farm Management Association of Nigeria, FMAN; Nigerian Rural Sociological Association, NRSA and Agricultural Society of Nigeria, ASN, among others.<br /><br />
+
+
+Prof. Nyaudoh Ndaeyo is a prolific publisher of books, book chapters and articles in learned journals and proceedings of conferences.  He has 21 conference papers and 152 journal articles and numerous book chapters to his credit.<br /><br />
+
+Until his appointment as the Deputy Vice-Chancellor, Administration, he was the Dean of Faculty of Agriculture and Chairman, Committee of Deans of the Promaridrian University.
+He is married with two children.<br></p>
+				  
+                </div>
+      </div>
+
+      <!-- JavaScript for Sticky Navigation Bar -->
+      <script>
+            onscroll = function() {
+                  sticknav()
+            };
+
+            var navbar = document.getElementById("nav");
+            var sticky = navbar.offsetTop;
+
+            function sticknav() {
+                  if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                  } else {
+                        navbar.classList.remove("sticky");
+                  }
+            }
+      </script>
+
+      <script>
+            var slideIndex = 0;
+            showSlides();
+            var slides, dots;
+
+            function showSlides() {
+                  var i;
+                  slides = document.getElementsByClassName("image_slide");
+                  dots = document.getElementsByClassName("dot");
+
+                  for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                  }
+                  slideIndex++;
+
+                  if (slideIndex > slides.length) {
+                        slideIndex = 1
+                  }
+
+                  for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace("active", "");
+                  }
+                  slides[slideIndex - 1].style.display = "block";
+                  dots[slideIndex - 1].className += " active";
+                  setTimeout(showSlides, 6000);
+            }
+
+            function plusSlides(position) {
+                  slideIndex += position;
+
+                  if (slideIndex > slides.length) {
+                        slideIndex = 1
+                  } else if (slideIndex < 1) {
+                        slideIndex = slides.length
+                  }
+
+                  for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                  }
+
+                  for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex - 1].style.display = "block";
+                  dots[slideIndex - 1].className += " active";
+            }
+
+            function currentSlide(index) {
+                  if (index > slides.length) {
+                        index = 1
+                  } else if (index < 1) {
+                        index = slides.length
+                  }
+
+                  for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                  }
+
+                  for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                  }
+
+                  slides[index - 1].style.display = "block";
+                  dots[index - 1].className += " active";
+            }
+      </script>
+</body>
+
+</html>

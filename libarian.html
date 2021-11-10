@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>PROMARIDRIAN UNIVERSITY</title>
+      <link rel="stylesheet" href="css/project.css" type="text/css">
+      <link rel="shortcut icon" href="images/logo.PNG">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+      <div class="contain">
+            <div class="header">
+                  <div class="logo"></div>
+                  <div class="name">
+                        <h1>PROMARIDRIAN UNIVERSITY</h1>
+                        <p><b><i>Education; The Foundation of Good Fortune</i></b></p>
+                  </div>
+
+            </div>
+            <ul id="nav">
+                  <li><a href="index.html">The University <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown">
+                              <li><a href="vision.html">Vision</a></li>
+                              <li><a href="Mission.html">Mission</a></li>
+                              <li><a href="Core.html">Core Values</a></li>
+                              <li><a href="History.html">History</a></li>
+                              <li><a href="Goals.html">Goals & Objectives</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="index.html">Management <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                              <li><a href="vc.html">Vice Chancellor</a></li>
+                              <li><a href="dvcadmin.html">DVC Admin</a></li>
+                              <li><a href="dvcacademics.html">DVC Academics</a></li>
+                              <li><a href="registrar.html">Registrar</a></li>
+                              <li><a href="bursar.html">Bursar</a></li>
+                              <li><a href="libarian.html">Libarian</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="index.html">Council <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                              <li><a href="Chancellor.html">Chancellor</a></li>
+                              <li><a href="prochancellor.html">Pro-Chancellor</a></li>
+
+                        </ul>
+                  </li>
+                  <li><a href="index.html">Admission <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                              <li><a href="undergraduate.html">Undergraduate</a></li>
+                              <li><a href="postgraduate.html">Postgraduate</a></li>
+                              <li><a href="predegree.html">Predegree/Basic Studies</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="faculties.html">Faculties</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="contact.html">Contact-Us</a></li>
+            </ul>
+
+      </div>
+
+      <div class="vccontain">
+            <h4>Libarian</h4>
+
+            <div><img src="images/libarian.jpg">
+                 <p><strong>Professor Ahiaoma Ibegwam:  Chartered Librarian of Nigeria (CLN, MNIM), B.A., History Hons, MLS (U.I.); Med Edu. Admin.(Unilag); Ph.D.(U.I.). </strong><br /><br />
+                 Born in December 19th 1965 to   Mr. and Mrs. Samuel Nwaobilo Nweaze both Masters of Science graduates of Howard University and University Rochester,   in the United States of America. She is the second child in a family of six children.Ahiaoma Ibegwam  commenced her education  in Volmer Elementary School and David B. Elementary Schools both at the Rush-Henrietta, New York in the United States of America. Later, she attended Burger Junior High School, New York for her secondary school. When she returned to Nigeria, she continued her secondary education at the Holy Child College, Obalende, Lagos. Her first degree is from the University of Calabar. She also possesses a Masters Degree in Educational Administration from the University of Lagos. Her Masters of Library and Information Science  and  Doctor of Philosophy  degrees are from the University of Ibadan.<br /><br />
+Ahiaoma Ibegwam, was the University Librarian of Michael Okpara University of Agriculture, Umudike (June 2010- June 2015).  She spent about two decades as a Librarian with the College of Medicine, University of Lagos, having risen through the ranks from librarian two to Principal Medical Librarian and Acting  Medical Librarian in 2001. She commenced her career at The Mail Newspapers as a research Librarian in 1990.  Professor Ibegwam was a two term Assistant General Secretary of the NLA Lagos chapter and the first Vice Chairman, Association for Health Information Libraries in Africa   ( AHILA, Nigeria). She has attended several national and  international conferences. She is widely published with articles in local and international peer-reviewed journals. Professor Ibegwam has edited several books  and has several chapter contributions to books. Her areas of specialization include LIS management, Biblimetrics, and Indigenous publications management, with emphasis on the medical, dental and agricultural education in Nigeria. She is  happily married to her soul mate  Mr Fintan Emeka Ibegwam  and they are  blessed with wonderful children.</p>
+            </div>
+      </div>
+
+      <!-- JavaScript for Sticky Navigation Bar -->
+      <script>
+            onscroll = function() {
+                  sticknav()
+            };
+
+            var navbar = document.getElementById("nav");
+            var sticky = navbar.offsetTop;
+
+            function sticknav() {
+                  if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                  } else {
+                        navbar.classList.remove("sticky");
+                  }
+            }
+      </script>
+
+      <script>
+            var slideIndex = 0;
+            showSlides();
+            var slides, dots;
+
+            function showSlides() {
+                  var i;
+                  slides = document.getElementsByClassName("image_slide");
+                  dots = document.getElementsByClassName("dot");
+
+                  for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                  }
+                  slideIndex++;
+
+                  if (slideIndex > slides.length) {
+                        slideIndex = 1
+                  }
+
+                  for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace("active", "");
+                  }
+                  slides[slideIndex - 1].style.display = "block";
+                  dots[slideIndex - 1].className += " active";
+                  setTimeout(showSlides, 6000);
+            }
+
+            function plusSlides(position) {
+                  slideIndex += position;
+
+                  if (slideIndex > slides.length) {
+                        slideIndex = 1
+                  } else if (slideIndex < 1) {
+                        slideIndex = slides.length
+                  }
+
+                  for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                  }
+
+                  for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex - 1].style.display = "block";
+                  dots[slideIndex - 1].className += " active";
+            }
+
+            function currentSlide(index) {
+                  if (index > slides.length) {
+                        index = 1
+                  } else if (index < 1) {
+                        index = slides.length
+                  }
+
+                  for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                  }
+
+                  for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                  }
+
+                  slides[index - 1].style.display = "block";
+                  dots[index - 1].className += " active";
+            }
+      </script>
+</body>
+
+</html>

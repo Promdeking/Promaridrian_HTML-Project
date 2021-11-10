@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>PROMARIDRIAN UNIVERSITY</title>
+      <link rel="stylesheet" href="css/project.css" type="text/css">
+      <link rel="shortcut icon" href="images/logo.PNG">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+      <div class="contain">
+            <div class="header">
+                  <div class="logo"></div>
+                  <div class="name">
+                        <h1>PROMARIDRIAN UNIVERSITY</h1>
+                        <p><b><i>Education; The Foundation of Good Fortune</i></b></p>
+                  </div>
+
+            </div>
+            <ul id="nav">
+                  <li><a href="index.html">The University <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown">
+                              <li><a href="vision.html">Vision</a></li>
+                              <li><a href="Mission.html">Mission</a></li>
+                              <li><a href="Core.html">Core Values</a></li>
+                              <li><a href="History.html">History</a></li>
+                              <li><a href="Goals.html">Goals & Objectives</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="index.html">Management <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                              <li><a href="vc.html">Vice Chancellor</a></li>
+                              <li><a href="dvcadmin.html">DVC Admin</a></li>
+                              <li><a href="dvcacademics.html">DVC Academics</a></li>
+                              <li><a href="registrar.html">Registrar</a></li>
+                              <li><a href="bursar.html">Bursar</a></li>
+                              <li><a href="libarian.html">Libarian</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="index.html">Council <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                              <li><a href="Chancellor.html">Chancellor</a></li>
+                              <li><a href="prochancellor.html">Pro-Chancellor</a></li>
+
+                        </ul>
+                  </li>
+                  <li><a href="index.html">Admission <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                              <li><a href="undergraduate.html">Undergraduate</a></li>
+                              <li><a href="postgraduate.html">Postgraduate</a></li>
+                              <li><a href="predegree.html">Predegree/Basic Studies</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="faculties.html">Faculties</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="contact.html">Contact-Us</a></li>
+            </ul>
+
+            <div class="contactcontain">
+                  <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63597.21049897924!2d8.312899434479982!3d4.96862896865956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067878cb382801f%3A0xc5d3e4e6018d0bb!2sGreen%20Valley%20Hotels%20and%20Garden!5e0!3m2!1sen!2sng!4v1595848607166!5m2!1sen!2sng" width="900" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                  </div>
+
+                  <div class="form">
+                        <form method="post">
+                              <p class="sm">
+                                    <input type="text" placeholder="Enter Name" reqiured class="txt">
+                                    <input type="email" placeholder="user@mail.com" reqiured class="txt">
+                              </p>
+                              <p class="sm">
+                                    <input type="text" placeholder="Subject" required class="txtx">
+                              </p>
+                              <p class="sm">
+                                    <textarea class="msg" placeholder="Type your message">
+                    </textarea>
+                              </p>
+                              <p class="sm">
+                                    <input type="submit" value="SEND" class="btn">
+                                    <input type="reset" value="CANCEL" class="btn1">
+
+                              </p>
+                        </form>
+                  </div>
+                  
+                              </div>
+
+                  <div class="contact">
+                        <div class="phone">
+                              <p class="tit">Phone</p>
+                              <p class="text"> 08186717878<br />
+                                    09032528203<br />
+                                    08075828070
+                              </p>
+                        </div>
+                        <div class="address">
+                              <p class="tit">Address</p>
+                              <address class="text" >
+                                    No. 3 Victory Drive <br />Calabar,<br />
+                                    Cross River State
+                              </address>
+                        </div>
+                        <div class="mail">
+                              <p class="tit">Mail Address</p>
+                              <p class="text" >
+                                    <a href="mailto:info@pu.edu.ng">info@pu.edu.ng</a><br />
+                                    <a href="mailto:support@pu.edu.ng">support@pu.edu.ng</a><br />
+                                    <a href="mailto:contactus@pu.edu.ng">contactus@pu.edu.ng</a>
+                              </p>
+                        </div>
+                  </div>
+
+      </div>
+
+      <!-- JavaScript for Sticky Navigation Bar -->
+      <script>
+            onscroll = function() {
+                  sticknav()
+            };
+
+            var navbar = document.getElementById("nav");
+            var sticky = navbar.offsetTop;
+
+            function sticknav() {
+                  if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                  } else {
+                        navbar.classList.remove("sticky");
+                  }
+            }
+      </script>
+
+      <script>
+            var slideIndex = 0;
+            showSlides();
+            var slides, dots;
+
+            function showSlides() {
+                  var i;
+                  slides = document.getElementsByClassName("image_slide");
+                  dots = document.getElementsByClassName("dot");
+
+                  for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                  }
+                  slideIndex++;
+
+                  if (slideIndex > slides.length) {
+                        slideIndex = 1
+                  }
+
+                  for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace("active", "");
+                  }
+                  slides[slideIndex - 1].style.display = "block";
+                  dots[slideIndex - 1].className += " active";
+                  setTimeout(showSlides, 6000);
+            }
+
+            function plusSlides(position) {
+                  slideIndex += position;
+
+                  if (slideIndex > slides.length) {
+                        slideIndex = 1
+                  } else if (slideIndex < 1) {
+                        slideIndex = slides.length
+                  }
+
+                  for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                  }
+
+                  for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex - 1].style.display = "block";
+                  dots[slideIndex - 1].className += " active";
+            }
+
+            function currentSlide(index) {
+                  if (index > slides.length) {
+                        index = 1
+                  } else if (index < 1) {
+                        index = slides.length
+                  }
+
+                  for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                  }
+
+                  for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                  }
+
+                  slides[index - 1].style.display = "block";
+                  dots[index - 1].className += " active";
+            }
+      </script>
+
+</body>
+
+</html>

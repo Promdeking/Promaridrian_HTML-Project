@@ -1,0 +1,951 @@
+body,
+html {
+      margin: 0px;
+      padding: 0px;
+}
+
+.contain {
+      width: 100%;
+      height: auto;
+      background: lack
+}
+
+.header {
+      width: 100%;
+      height: 120px;
+      background: white;
+}
+
+.logo {
+      width: 120px;
+      height: 110px;
+      background-image: url(../images/logo.PNG);
+      margin-left: 100px;
+      margin-top: 5px;
+      float: left;
+      background-size: 100% 100%;
+      background-repeat: no-repeat
+}
+
+.name {
+      float: left;
+      margin-left: 10px;
+      text-align: center;
+      width: 500px;
+      height: 100px;
+      padding: 20px 0px 0px 0px;
+      line-height: 10px
+}
+
+.name h1 {
+      font-family: cursive;
+      color: green;
+}
+
+.name p {
+      color: red
+}
+
+#nav {
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      background: green;
+      list-style-type: none;
+      margin: 0;
+      z-index: 1;
+      text-shadow: 1px 1px black;
+}
+
+#nav li {
+      display: inline-block;
+      border-left: 3px white solid;
+      list-style-type: none;
+
+}
+
+
+#nav li:first-child {
+      margin-left: 120px;
+      border-left: none
+}
+
+#nav li a {
+      padding: 15px 13px;
+      color: white;
+      font-weight: bold;
+      font-family: sans-serif;
+      margin-right: -4px;
+      text-decoration: none;
+      text-align: center;
+      position: relative;
+}
+
+#nav li .active  {
+      background-color: red
+}
+
+#nav li a:hover {
+      background-color: red;
+}
+
+#nav .dropdown {
+      display: none;
+      height: auto;
+      background-color: green;
+      padding: 0;
+      position: absolute;
+      z-index: 1;
+
+
+}
+
+#nav .dropdown li {
+
+      display: block;
+      border: 0;
+      list-style-type: none;
+      margin-left: 0px;
+      text-align: left;
+
+}
+
+#nav .dropdown li a {
+      color: white;
+      font-weight: bold;
+      font-family: sans-serif;
+      margin-right: 0px;
+      position: relative;
+      display: block;
+      padding: 0px 13px;
+      text-align: left;
+}
+
+#nav li:hover .dropdown {
+      display: block
+}
+
+.sticky {
+      position: fixed;
+      top: 0px;
+      width: 100%;
+}
+
+.seconder {
+      width: 100%;
+      height: auto;
+}
+
+.seconder_left {
+      width: 65%;
+      height: auto;
+      float: left;
+      border-right: red 2px dotted
+}
+
+
+.welcome {
+      width: 100%;
+      height: 30px;
+      margin: 0px;
+      padding: 10px;
+      text-align: center;
+      font-size: 15px
+}
+
+.welcome h2 {
+      margin: 0px;
+      color: red;
+
+}
+
+.image_carousel {
+      width 90%;
+      height: 350px;
+      position: relative;
+
+}
+
+.image_slide {
+      width: 100%;
+      height: 350px;
+      display: none;
+
+}
+
+
+.image_slide img {
+      width: 100%;
+      height: 350px;
+
+}
+
+.image_slide p {
+
+      font-weight: bold;
+      background-color: rgba(128, 128, 128, 0.77);
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      font-size: 20px;
+      font-family: cursive;
+      text-align: center;
+      color: white;
+      margin-bottom: 0px;
+      bottom: 0;
+      position: absolute;
+      text-shadow: 1px 1px black;
+}
+
+
+/* Fading animation */
+.fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 2s;
+      animation-name: fade;
+      animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+      from {
+            opacity: .4
+      }
+
+      to {
+            opacity: 1
+      }
+}
+
+@keyframes fade {
+      from {
+            opacity: .4
+      }
+
+      to {
+            opacity: 1
+      }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+      .text {
+            font-size: 11px
+      }
+}
+
+
+.prev,
+.next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      text-shadow: 2px 2px green;
+      font-weight: bold;
+      font-size: 22px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      z-index:
+
+
+}
+
+/* Position the "next button" to the right */
+.next {
+      border-radius: 3px 0 0 3px;
+      right: 0
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+      background-color: rgba(0, 128, 0, 0.79);
+      text-shadow: 2px 2px black
+}
+
+/* The dots/bullets/indicators */
+.dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin-top: 10px;
+      margin-right: 2px;
+      margin-left: 2px;
+      background-color: green;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+      background-color: red;
+}
+
+.articles {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      padding: 5px;
+}
+
+.article1 {
+      width: 30%;
+      height: auto;
+      float: left;
+      margin: 10px;
+      border: 1px green solid;
+      border-radius: 15px;
+      text-align: center;
+}
+
+
+
+.article1 .heading h4 {
+      margin: 0;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      line-height: 40px;
+      height: 40px;
+      background-color: rgba(15, 152, 36, 0.97);
+      width: 100%;
+      color: white;
+      font-family: cursive;
+      font-size: 20px;
+      text-shadow: 1px 1px black;
+
+}
+
+.article1 .body {
+      width: 90%;
+      height: 120px;
+      padding: 10px;
+
+}
+
+.article1 .body p {
+      margin: 0 auto;
+      text-align: left;
+      font-family: cursive
+}
+
+.article1 .footer {
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      height: 40px;
+      background-color: darkgrey;
+      width: 92%;
+      padding-top: 10px
+}
+
+.article1 .footer p {
+      font-family: cursive;
+      width: 90%;
+      line-height: 30px;
+      height: 30px;
+      background-color: green;
+      margin: 0px auto;
+      color: white;
+      font-size: 15px;
+      border-radius: 5px
+}
+
+.article1 .footer a {
+      text-decoration: none;
+}
+
+.seconder_right {
+      width: 34%;
+      height: auto;
+      float: right
+}
+
+.seconder_right .news {
+      width: 90%;
+      height: 500px;
+      background-color: #ebe1e1;
+      overflow: hidden;
+}
+
+.seconder_right .topbar {
+      margin-top: 20px;
+      width: 100%;
+      height: 50px;
+      background-color: #b7b1b1;
+      line-height: 50px;
+}
+
+.seconder_right .newscontain {
+      width: 100%;
+      height: 420px;
+      overflow-y: scroll
+}
+
+.seconder_right .topbar .style {
+      width: 15px;
+      height: 50px;
+      background-color: green;
+      float: left;
+      border: 0;
+
+}
+
+.seconder_right .topbar .rotator {
+      float: left;
+      margin-top: 17px;
+      transform: rotate(45deg);
+      margin-left: -8px;
+      width: 15px;
+      height: 15px;
+      background-color: green;
+      border: 0;
+
+}
+
+.seconder_right .topbar p {
+      color: green;
+      font-weight: bold;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      margin: 0;
+      font-size: 22px;
+      text-align: center;
+}
+
+.seconder_right .news1 {
+      padding-left: 20px;
+      padding-right: 20px;
+}
+
+.seconder_right .news1:first-child {
+      padding-top: 10px
+}
+
+.seconder_right .news1 p {
+      margin: 0;
+      font-size: 20px;
+      color: green;
+      font-weight: bold;
+}
+
+.seconder_right .news1 i {
+      color: red;
+      font-size: 16px
+}
+
+.convoc {
+      width: 90%;
+      height: 280px;
+      margin-top: 40px;
+      border: 2px green solid;
+}
+
+.convoc p {
+      text-align: center;
+      font-weight: bold;
+      margin: 0;
+      font-family: cooper;
+      color: green;
+}
+
+.lastdown {
+      width: 100%;
+      height: 220px;
+      background-color: rgb(7, 142, 38);
+      margin-top: 1000px;
+      color: white
+}
+
+
+.lastdownmid {
+      width: 90%;
+      height: auto;
+      margin: 0px auto;
+      font-family: monospace;
+      font-size: 14px;
+      padding-top: 10px
+}
+
+.lastdownmid ul {
+      margin-left: -40px;
+
+}
+
+.lastdownmid ul li {
+      display: block;
+      list-style-type: none;
+
+}
+
+.lastdownmid p {
+      font-weight: bold;
+      font-size: 24px;
+      font-family: bookman old style;
+      margin: 0;
+
+
+}
+
+.lastdownmid a {
+      line-height: 35px;
+      color: white;
+      font-size: 18px
+}
+
+.lastdiscover {
+      width: 30%;
+      height: auto;
+      float: left
+}
+
+a
+{
+text-decoration: none      
+}
+
+.lastproducts {
+      width: 30%;
+      height: auto;
+      margin: 0 auto;
+}
+
+.lastsupport {
+      width: 30%;
+      height: auto;
+      float: right;
+      margin-top: -200px
+}
+
+
+.lastdowndownlink2 {
+
+      float: left;
+      margin-right: 40px;
+      width: 160px;
+      margin: 0 auto;
+      border-radius: 20px;
+      
+}
+
+.lastdowndownlink2 .fa {
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 30%;
+      margin-right: 10px;
+      padding: 5px
+      
+}
+
+.lastdowndownlink2 .fa:last-child {
+      margin-right: 0
+}
+
+.fa-facebook {
+      background-color: darkblue;
+      color: white
+}
+
+.fa-facebook:hover {
+      background-color: white;
+      color: darkblue
+}
+
+.fa-twitter {
+      background-color: dodgerblue;
+      color: white
+}
+
+.fa-twitter:hover {
+      background-color: white;
+      color: dodgerblue
+}
+
+.fa-youtube {
+      background-color: red;
+      color: white
+}
+
+.fa-youtube:hover {
+      background-color: white;
+      color: red
+}
+
+.fa-instagram {
+      background-color: brown;
+      color: white
+}
+
+.fa-instagram:hover {
+      background-color: white;
+      color: brown
+}
+
+.lastdowndownlink2 a {
+      text-decoration: none
+}
+
+.footer {
+      height: 50px;
+      width: 100%;
+      margin: 0;
+      background-color: red;
+      font-family: monospace;
+      padding: 10px
+}
+
+.footer1 {
+      
+      height: 50px;
+      line-height: 50px;
+      width: 35%;
+      border-right: 2px solid white;
+      float: left;
+      color: white;
+      font-size:20px;
+      margin-left: 350px;
+      margin-right: 20px
+}
+
+/*History style*/
+.historycontain
+{
+      width: 90%;
+      height: auto;
+      margin: 0 auto
+}
+
+.historycontain h4
+{
+      padding-top: 15px; 
+      margin: 0;
+      text-align: center;
+      font-size: 30px;
+      color: red
+}
+
+.historycontain p
+{
+      font-family: cursive;
+      font-size: 20px;
+}
+
+/*Vision style*/
+.visioncontain
+{
+      width: 90%;
+      height: auto;
+      margin: 0 auto
+}
+
+.visioncontain h4
+{
+      padding-top: 15px; 
+      margin: 0;
+      text-align: center;
+      font-size: 30px;
+      color: red
+}
+
+.visioncontain p
+{
+      font-family: cursive;
+      font-size: 20px;
+}
+
+/*Mission style*/
+.missioncontain{
+      width: 90%;
+      height: auto;
+      margin: 0 auto
+}
+
+.missioncontain h4
+{
+      padding-top: 15px; 
+      margin: 0;
+      text-align: center;
+      font-size: 30px;
+      color: red
+}
+
+.missioncontain p
+{
+      font-family: cursive;
+      font-size: 20px;
+}
+
+/*Core Value style*/
+.corecontain{
+      width: 90%;
+      height: auto;
+      margin: 0 auto
+}
+
+.corecontain h4
+{
+      padding-top: 15px; 
+      margin: 0;
+      text-align: center;
+      font-size: 30px;
+      color: red
+}
+
+.corecontain ul
+{
+      font-family: cursive;
+      font-size: 20px;
+}
+
+/*Goals & Objective style*/
+.goalcontain{
+      width: 90%;
+      height: auto;
+      margin: 0 auto
+}
+
+.goalcontain h4
+{
+      padding-top: 15px; 
+      margin: 0;
+      text-align: center;
+      font-size: 30px;
+      color: red
+}
+
+.goalcontain ul
+{
+      font-family: cursive;
+      font-size: 20px;
+}
+
+.goalcontain ul li
+{
+      padding: 7px
+}
+
+/*Mission style*/
+.vccontain{
+      width: 90%;
+      height: auto;
+      margin: 0 auto
+}
+
+.vccontain h4
+{
+      padding-top: 15px; 
+      margin: 0;
+      text-align: left;
+      font-size: 30px;
+      color: red
+}
+
+.vccontain p
+{
+      font-family: cursive;
+      font-size: 20px;
+}
+
+.vccontain div img
+{
+      height: 200px;
+      width: 180px;
+      float:left;
+      margin:10px
+}
+
+/*Mission style*/
+.facultiescontain{
+      width: 90%;
+      height: auto;
+      margin: 0 auto
+}
+
+.facultiescontain h4
+{
+      padding-top: 15px; 
+      margin: 0;
+      text-align: center;
+      font-size: 30px;
+      color: red
+}
+
+.facultiescontain p
+{
+      font-family: cursive;
+      font-size: 20px;
+}
+
+/*contact style*/
+.contactcontain 
+{
+      width: 100%;
+      height: auto;
+      margin-top: 15px;
+}
+
+.map 
+{
+      height: 400px;
+      background: grey;
+      width: 40%;
+      float: left;
+      margin: 0px 40px
+}
+
+.map iframe {
+      height: 400px;
+      background: grey;
+      width: 100%;
+}
+
+.form {
+      height: 500px;
+      width: 50%;
+      float: right
+}
+
+.form p {
+      margin: 10px;
+}
+
+.form form {
+      padding: 30px
+}
+
+.sm {
+      margin-bottom: 5px
+}
+
+.txt {
+      width: 48%;
+      height: 25px;
+      font-family: cursive;
+
+}
+
+.txtx {
+      width: 98%;
+      height: 35px;
+      font-family: cursive;
+}
+
+.msg {
+      height: 200px;
+      width: 98%;
+      resize: none;
+      font-family: cursive;
+
+}
+
+.btn {
+      background: darkgreen;
+      width: 190px;
+      height: 40px;
+      color: white;
+      font-family: cursive;
+      font-size: 18px;
+      border: 2px solid green;
+      font-weight: bold;
+      margin-left: 70px
+}
+
+.btn:hover {
+      background: white;
+      border: 2px solid darkgreen;
+      color: darkgreen;
+      transition: 2s;
+}
+
+.btn1 {
+      background: red;
+      width: 190px;
+      height: 40px;
+      color: white;
+      font-family: cursive;
+      font-size: 18px;
+      border: 2px solid red;
+      font-weight: bold;
+      margin-left: 30px;
+}
+
+.btn1:hover {
+      background: white;
+      border: 2px solid red;
+      color: red;
+      transition: 2s;
+}
+
+
+.contact {
+      height: 250px;
+      padding: 10px;
+      width: 100%;
+      margin-top: 600px;
+}
+
+.phone {
+      width: 31%;
+      height: 240px;
+      background: #eee;
+      float: left;
+      font-size: 35px;
+      color: red;
+      padding: 0 10px
+}
+
+.tit
+{
+      font-weight: bold;
+      font-size: 50px;
+      margin: 0;
+      margin-top: 20px;
+      color: green
+}
+
+.address {
+      background: #eee;
+      width: 31%;
+      height: 240px;
+      float: left;
+      margin-left: 20px;
+      font-size: 30px;
+      color: red;
+      padding: 0 10px
+}
+
+.mail {
+      float: right;
+      background: #eee;
+      width: 31%;
+      height: 240px;
+      padding: 0 10px
+}
+
+.contact a {
+      text-decoration: none;
+      color: red;
+      font-size: 30px;
+      
+}
+
+/*Gallery Style*/
+.pictures {
+    height: 700px;
+    padding: 20px;
+    padding-top: 90px
+}
+
+.image_box {
+    width: 250px;
+    height: 250px;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.picture a
+{
+    text-decoration: none
+}
